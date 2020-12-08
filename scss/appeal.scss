@@ -1,0 +1,69 @@
+/*Обращение*/
+.appeal {
+	margin: 50px 0 0 0;
+	padding: 30px 10px;
+	background-color: #f2f2f2;
+	
+	&__title {
+		text-transform: uppercase;
+		color: $thirdFontColor;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 0 0 0;
+		color: #808080;
+		font-size: 17px;
+		line-height: 1.5;
+	}
+
+	&__text-begin {
+		margin: 0 15px 0 0;
+	}
+	
+	&__text-end {
+		margin: 0 0 0 15px;
+	}
+	
+	&__link {
+		position: relative;
+		top: 10px;
+		left: 5px;
+		text-decoration: none;
+		color: $thirdFontColor;
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 0;
+		transition: $transition;
+		
+		&:hover,
+		&:focus {
+			color: $secondFontColor;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.appeal {
+		margin: 30px 0 0 0;
+		
+		&__title {
+			font-size: 30px;
+		}
+		
+		&__wrapper {
+			flex-direction: column;
+		}
+		
+		&__text-begin {
+			margin: 0;
+		}
+		
+		&__text-end {
+			margin: 15px 0 0 0;
+		}
+	}
+}

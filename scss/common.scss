@@ -1,0 +1,42 @@
+// === Common ===
+*,
+*:before, 
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    @include font-roboto;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: $screen-md-max) {
+    .container {
+    max-width: 100%;
+    padding: 0;
+    }
+}
+
+.title-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

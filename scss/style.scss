@@ -1,0 +1,29 @@
+@import 'normalize.scss';
+@import 'swiper-bundle';
+
+// === Fonts ===
+@import 'fonts';
+
+// === Mixins ===
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+// === Variables ===
+@import 'variables';
+
+// === Common ===
+@import 'common';
+
+// === Header ===
+@import 'header';
+
+// === Main ===
+@import 'advantages';
+@import 'appeal';
+@import 'services';
+@import 'tagline';
+@import 'clients';
+
+// === Footer ===
+@import 'footer';
